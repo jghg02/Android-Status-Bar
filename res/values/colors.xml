@@ -1,0 +1,32 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <color name="actionbar_title_color">#000000</color>
+    <color name="to_apply_status">#50FF20</color>
+    <color name="reassigned_status">#FA9828</color>
+    <color name="expired_status">#DF1313</color>
+    <color name="partially_applied_status">#FFF720</color>
+    <color name="applied_status">#FFFFFF</color>
+    <color name="unapplied_status">#8D8D8D</color>
+    <color name="restarted_status">#F4FF8D</color>
+    <color name="status_border_color">#787878</color>
+    <color name="list_item_back_groud">#eee</color>
+    <color name="dodger_blue">#1E90FF</color>
+    <color name="destination_item_even">#ECECEC</color>
+	<color name="destination_item_odd">#F3F3F3</color>
+	<color name="destination_item_child">#F9F9F9</color>
+</resources>

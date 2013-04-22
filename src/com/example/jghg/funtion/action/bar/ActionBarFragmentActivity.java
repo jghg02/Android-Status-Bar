@@ -36,7 +36,7 @@ public class ActionBarFragmentActivity extends FragmentActivity{
 		boolean retValue = false;
         retValue |= mActionBarHelper.onCreateOptionsMenu(menu);
         retValue |= super.onCreateOptionsMenu(menu);
-        Log.d(TAG, "retornando el valor para el menu" + retValue);
+        Log.d(TAG, "retornando el valor para el menu " + retValue);
         return retValue;
 	}
 	

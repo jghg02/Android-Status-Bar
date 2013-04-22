@@ -16,6 +16,8 @@ import com.example.jghg.funtion.action.bar.ActionBarFragmentActivity;
  */
 public class MainActivity extends ActionBarFragmentActivity {
 
+	private static final String LOG_TAG = MainActivity.class.getName();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,8 +26,9 @@ public class MainActivity extends ActionBarFragmentActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.actionbar, menu);
+		Log.i(LOG_TAG, "onCreateOptionsMenu");
+		// MenuInflater inflater = getMenuInflater();
+		// inflater.inflate(R.menu.actionbar, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
 

@@ -26,6 +26,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.InflateException;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -50,6 +51,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
 	private static final String MENU_RES_NAMESPACE = "http://schemas.android.com/apk/res/android";
 	private static final String MENU_ATTR_ID = "id";
 	private static final String MENU_ATTR_SHOW_AS_ACTION = "showAsAction";
+	private static final String LOG_TAG = ActionBarHelper.class.getName();
 
 	protected Set<Integer> mActionItemIds = new HashSet<Integer>();
 

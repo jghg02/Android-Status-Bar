@@ -7,7 +7,7 @@
 
     <ListView
         android:id="@+id/lista"
-        android:layout_width="fill_parent"
+        android:layout_width="200dp"
         android:layout_height="fill_parent" >
     </ListView>
 

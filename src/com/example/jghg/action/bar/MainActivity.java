@@ -3,10 +3,11 @@ package com.example.jghg.action.bar;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import com.example.com.jghg.action.bar.R;
+import com.example.jghg.adapters.ListAdapter;
 import com.example.jghg.funtion.action.bar.ActionBarFragmentActivity;
 
 /**
@@ -19,9 +20,19 @@ public class MainActivity extends ActionBarFragmentActivity {
 	private static final String LOG_TAG = MainActivity.class.getName();
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.slide_menu);
+		String[] items = new String[] { "Linux", "Mac OS", "Windows", "iPhone",
+				"iMac", "MacBook", "MacBook Pro", "Linux", "Mac OS", "Windows",
+				"iPhone", "iMac", "MacBook", "MacBook Pro", "Linux", "Mac OS",
+				"Windows", "iPhone", "iMac", "MacBook", "MacBook Pro", "Linux",
+				"Mac OS", "Windows", "iPhone", "iMac", "MacBook", "MacBook Pro" };
+
+		ListView list = (ListView) findViewById(R.id.lista);
+
+		list.setAdapter(new ListAdapter(this, items));
+
 	}
 
 	@Override
@@ -39,14 +50,9 @@ public class MainActivity extends ActionBarFragmentActivity {
 		switch (itemId) {
 		case android.R.id.home:
 			Log.v("MENU", "Press Home Button in Anction Bar");
-			// finish();
 			break;
-		// case R.id.menu_search:
-		//
-		// super.onSearchRequested();
-		// break;
-		default:
 
+		default:
 			break;
 		}
 		return super.onOptionsItemSelected(item);

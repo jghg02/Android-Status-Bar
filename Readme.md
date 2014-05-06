@@ -50,4 +50,7 @@ Ejemplo de la implementacion de un Action Bar en Android __(version 2.3)__.
 	
 ###Resultado
 
+Josue Hernandez.
+@jghg02
+
 ![result](http://img809.imageshack.us/img809/3416/actionbar.png)
